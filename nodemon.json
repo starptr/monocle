@@ -1,0 +1,11 @@
+{
+	"ignore": [".git", "node_modules/", ".vscode/", "public/", "src/", "README.md", "dist/"],
+	"watch": ["server/"],
+	"execMap": {
+		"ts": "node -r ts-node/register"
+	},
+	"env": {
+		"NODE_ENV": "development"
+	},
+	"ext": "js,json,ts"
+}

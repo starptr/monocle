@@ -1,0 +1,13 @@
+{
+	"extends": "@tsconfig/node14/tsconfig.json",
+	"compilerOptions": {
+		"module": "CommonJS",
+		"outDir": "dist",
+		"sourceMap": true,
+		"removeComments": true,
+		"strict": true,
+		"target": "ES6"
+	},
+	"compileOnSave": true,
+	"include": ["server/**/*"]
+}
