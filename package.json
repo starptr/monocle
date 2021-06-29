@@ -7,7 +7,7 @@
 		"dev": "rollup -c -w",
 		"start": "sirv public --no-clear",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"server-build": "tsc -p server/tsconfig.json",
+		"server-build": "tsc -p server.tsconfig.json",
 		"server-dev-nodemon": "nodemon --config nodemon.json server/index.ts",
 		"server-dev": "concurrently \"tsc -p server.tsconfig.json -w\" \"nodemon dist/index.js\"",
 		"server-start": "node dist/index.js",
