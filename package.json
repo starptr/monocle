@@ -13,7 +13,7 @@
 		"server-start": "node dist/index.js",
 		"full-build": "yarn build && yarn server-build",
 		"full-dev": "concurrently -n \"svelte,tsc,nodemon\" -c \"white.bgRed.bold,white.bgBlue.bold,white.bgGreen.bold\" \"rollup -c -w\" \"tsc -p server.tsconfig.json -w\" \"nodemon dist/index.js\"",
-		"full-start": "concurrently \"yarn start\" \"yarn server-start\""
+		"full-start": "concurrently -n \"client,server\" -c \"white.bgRed.bold,white.bgBlue.bold\" \"yarn start\" \"yarn server-start\""
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^17.0.0",
